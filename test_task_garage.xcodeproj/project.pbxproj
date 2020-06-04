@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		DD26EFDB2488E05E001EED2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26EFDA2488E05E001EED2D /* AppDelegate.swift */; };
 		DD26EFDD2488E05E001EED2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26EFDC2488E05E001EED2D /* SceneDelegate.swift */; };
-		DD26EFDF2488E05E001EED2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26EFDE2488E05E001EED2D /* ViewController.swift */; };
 		DD26EFE22488E05E001EED2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD26EFE02488E05E001EED2D /* Main.storyboard */; };
 		DD26EFE52488E05E001EED2D /* test_task_garage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD26EFE32488E05E001EED2D /* test_task_garage.xcdatamodeld */; };
 		DD26EFE72488E061001EED2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD26EFE62488E061001EED2D /* Assets.xcassets */; };
 		DD26EFEA2488E061001EED2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD26EFE82488E061001EED2D /* LaunchScreen.storyboard */; };
+		DD26EFF22488EC39001EED2D /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26EFF12488EC39001EED2D /* ContactTableViewCell.swift */; };
+		DD26EFF42488EC68001EED2D /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26EFF32488EC68001EED2D /* ContactsViewController.swift */; };
+		DD78986224898A5A005CE53C /* DetailedContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78986124898A5A005CE53C /* DetailedContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD26EFD72488E05E001EED2D /* test_task_garage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_task_garage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD26EFDA2488E05E001EED2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD26EFDC2488E05E001EED2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD26EFDE2488E05E001EED2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD26EFE12488E05E001EED2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD26EFE42488E05E001EED2D /* test_task_garage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test_task_garage.xcdatamodel; sourceTree = "<group>"; };
 		DD26EFE62488E061001EED2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD26EFE92488E061001EED2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD26EFEB2488E061001EED2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD26EFF12488EC39001EED2D /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		DD26EFF32488EC68001EED2D /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		DD78986124898A5A005CE53C /* DetailedContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 		DD26EFD92488E05E001EED2D /* test_task_garage */ = {
 			isa = PBXGroup;
 			children = (
+				DD26EFF12488EC39001EED2D /* ContactTableViewCell.swift */,
+				DD26EFF32488EC68001EED2D /* ContactsViewController.swift */,
+				DD78986124898A5A005CE53C /* DetailedContactViewController.swift */,
 				DD26EFDA2488E05E001EED2D /* AppDelegate.swift */,
 				DD26EFDC2488E05E001EED2D /* SceneDelegate.swift */,
-				DD26EFDE2488E05E001EED2D /* ViewController.swift */,
 				DD26EFE02488E05E001EED2D /* Main.storyboard */,
 				DD26EFE62488E061001EED2D /* Assets.xcassets */,
 				DD26EFE82488E061001EED2D /* LaunchScreen.storyboard */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD26EFDF2488E05E001EED2D /* ViewController.swift in Sources */,
+				DD26EFF22488EC39001EED2D /* ContactTableViewCell.swift in Sources */,
+				DD78986224898A5A005CE53C /* DetailedContactViewController.swift in Sources */,
 				DD26EFE52488E05E001EED2D /* test_task_garage.xcdatamodeld in Sources */,
+				DD26EFF42488EC68001EED2D /* ContactsViewController.swift in Sources */,
 				DD26EFDB2488E05E001EED2D /* AppDelegate.swift in Sources */,
 				DD26EFDD2488E05E001EED2D /* SceneDelegate.swift in Sources */,
 			);
