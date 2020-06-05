@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Contacts View Controller-->
+        <!--Contacts-->
         <scene sceneID="3NO-nU-27C">
             <objects>
                 <viewController id="1nh-2c-uZD" customClass="ContactsViewController" customModule="test_task_garage" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ate-2j-yIu">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" rowHeight="100" id="CJl-ta-t9N" customClass="ContactTableViewCell" customModule="test_task_garage" customModuleProvider="target">
@@ -29,10 +29,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-lw-A3D">
                                                     <rect key="frame" x="10" y="5" width="394" height="90"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User-Avatar-Png-Graphic-Free-Download-Icon-Free-.png" translatesAutoresizingMaskIntoConstraints="NO" id="7eZ-cI-H6T">
-                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7eZ-cI-H6T">
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="7eZ-cI-H6T" secondAttribute="height" multiplier="4:4" id="3pd-LV-KFr"/>
                                                                 <constraint firstAttribute="height" constant="80" id="gDc-g3-Eik"/>
                                                                 <constraint firstAttribute="width" constant="80" id="v6w-qx-pSk"/>
                                                             </constraints>
@@ -48,10 +47,8 @@
                                                     <constraints>
                                                         <constraint firstItem="7eZ-cI-H6T" firstAttribute="top" secondItem="wgY-lw-A3D" secondAttribute="top" id="1cZ-08-vBB"/>
                                                         <constraint firstItem="fOs-zx-o5O" firstAttribute="top" secondItem="wgY-lw-A3D" secondAttribute="top" id="RCo-bp-bD7"/>
-                                                        <constraint firstItem="7eZ-cI-H6T" firstAttribute="centerY" secondItem="wgY-lw-A3D" secondAttribute="centerY" id="YTa-oE-Gd9"/>
                                                         <constraint firstAttribute="trailing" secondItem="fOs-zx-o5O" secondAttribute="trailing" id="eME-4L-dg9"/>
                                                         <constraint firstAttribute="bottom" secondItem="fOs-zx-o5O" secondAttribute="bottom" id="iTk-85-alJ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="7eZ-cI-H6T" secondAttribute="bottom" id="mSO-e9-xHT"/>
                                                         <constraint firstItem="fOs-zx-o5O" firstAttribute="leading" secondItem="7eZ-cI-H6T" secondAttribute="trailing" constant="10" id="yF1-wJ-aF5"/>
                                                         <constraint firstItem="7eZ-cI-H6T" firstAttribute="leading" secondItem="wgY-lw-A3D" secondAttribute="leading" id="zcJ-XF-cmM"/>
                                                     </constraints>
@@ -82,7 +79,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hra-ze-O75"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Kij-l4-Bo5"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Contacts" id="Kij-l4-Bo5">
+                        <barButtonItem key="backBarButtonItem" title="Contacts" id="lnR-VT-2OU"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="ate-2j-yIu" id="RAn-Ja-c64"/>
                     </connections>
@@ -155,10 +156,12 @@
                             <constraint firstItem="0mo-Px-Ff3" firstAttribute="leading" secondItem="z6a-ib-IJ0" secondAttribute="trailing" constant="18.5" id="UDr-lf-AcQ"/>
                             <constraint firstItem="vko-BT-Nv4" firstAttribute="top" secondItem="IzN-SM-41u" secondAttribute="bottom" constant="70.5" id="VYB-VT-fQl"/>
                             <constraint firstItem="Pmq-s6-vGX" firstAttribute="top" secondItem="IzN-SM-41u" secondAttribute="bottom" constant="66" id="Ymp-9S-53Y"/>
+                            <constraint firstItem="lAc-B1-IjM" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="TU5-Gm-UCT" secondAttribute="bottom" constant="439" id="gpJ-1r-ccX"/>
                             <constraint firstItem="lAc-B1-IjM" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="esf-fj-tT9" secondAttribute="trailing" constant="100" id="hgR-Ck-FkE"/>
                             <constraint firstItem="lAc-B1-IjM" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Pmq-s6-vGX" secondAttribute="trailing" constant="100" id="jk0-Iq-Ooa"/>
                             <constraint firstItem="TU5-Gm-UCT" firstAttribute="leading" secondItem="lAc-B1-IjM" secondAttribute="leading" constant="49" id="q5K-YJ-Bhh"/>
                             <constraint firstItem="vko-BT-Nv4" firstAttribute="leading" secondItem="lAc-B1-IjM" secondAttribute="leading" constant="49" id="rKA-4O-cHz"/>
+                            <constraint firstItem="lAc-B1-IjM" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="esf-fj-tT9" secondAttribute="bottom" constant="436" id="tAC-GU-51K"/>
                             <constraint firstItem="esf-fj-tT9" firstAttribute="top" secondItem="0mo-Px-Ff3" secondAttribute="bottom" constant="25" id="tVh-bz-jGn"/>
                             <constraint firstItem="IzN-SM-41u" firstAttribute="top" secondItem="lAc-B1-IjM" secondAttribute="top" constant="32" id="u2B-mc-8wx"/>
                             <constraint firstItem="z6a-ib-IJ0" firstAttribute="leading" secondItem="lAc-B1-IjM" secondAttribute="leading" constant="20" id="xPQ-1V-tMe"/>
@@ -196,7 +199,4 @@
             <point key="canvasLocation" x="-385.50724637681162" y="199.55357142857142"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="User-Avatar-Png-Graphic-Free-Download-Icon-Free-.png" width="820" height="859"/>
-    </resources>
 </document>
